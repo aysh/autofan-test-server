@@ -30,7 +30,7 @@ app.post( '/action', function(req,res) {
     }
     else if( reqAction == "OFF" ) {
 	autofanStateVar = 0;
-	autofanStateVarPrev = 0;
+	autofanStateVarPrev = 1;
     }
     else if( reqAction == "TOGGLE" ) {
 	var stateCache = autofanStateVar;
